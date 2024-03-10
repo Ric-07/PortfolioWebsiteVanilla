@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            Richi <span>D/Nath</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+           <a href="#home" class="active">Home</a>
+           <a href="#about">About</a>
+           <a href="#services">What I do</a>
+           <a href="#projects">Projects</a>
+           <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+  
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Richi</span></h1>
+            <h3 class="text-animation">
+                  I'm a <span class="text"></span>
+            </h3>
+            <p>I am an undergraduate student who loves to design and code.
+               I make UI designs and websites and create user friendly
+               digital experiences using design tools and code. </p>  
+               
+            <div class="social-icons">
+                <a href="#">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/designer-richi-debnath/">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a href="https://dribbble.com/15NearMe07">
+                    <i class="bx bxl-dribbble"></i>
+                </a>
+                <a href="https://www.instagram.com/_windandwater_/">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://twitter.com/TheMessiah07">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </div>
+
+            <div class="btn-group">
+                <a href="My Resume.pdf" download="My Resume.pdf" class="btn">Download CV</a>
+                <a href="#contact" class="btn">Contact</a>
+
+            </div>
+
+           
+            
+        </div>
+
+        <div class="home-img">
+            <img src="Me 2.png" alt="">
+        </div>
+    </section>
+
+    
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Me 2.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+            <p>Passionate UI/UX designer and web developer. Specializing in captivating visuals, intuitive interfaces, and responsive layouts. Committed to delivering exceptional digital experiences that exceed expectations. Let's create something amazing together.</p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">What I do in tech </h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxl-figma"></i>
+                    <h4>UI/UX Design</h4>
+                    <P>As a UI/UX designer, I focus on creating a sleek interface with easy-to-use navigation, crisp fonts, and dynamic responsiveness. I prioritize whitespace and subtle animations to craft an engaging and visually appealing user experience.</P>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code-alt"></i>
+                    <h4>Web Development</h4>
+                    <P>As a web developer, I ensure optimal performance and functionality by writing clean, efficient code. I prioritize responsive design, accessibility, and cross-browser compatibility to deliver an exceptional user experience across all devices and platforms.</P>
+                </div>
+            </div>
+
+            
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Design</h4>
+                    <P>As a frontend designer, I meticulously craft user interfaces that prioritize visuals, and seamless interactions. Leveraging HTML, CSS, and JavaScript, I create responsive layouts to captivate users and enhance their browsing experience.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Some of my works</h2>
+
+        <div class="projects-box">
+           <div class="project-card">
+               <img src="Mockup.jpg" alt="">
+                
+               <h3>Design 1</h3>
+
+               <p>Figma design: Sleek food ordering website with vibrant visuals, intuitive navigation, and seamless checkout experience</p>
+               <div
+               onclick="window.location.href='https://dribbble.com/shots/23354058-Food-Ordering-Website-UI'"
+               class="btn">See Design
+               </div>
+           </div>
+
+           <div class="project-card">
+            <img src="Music.png" alt="">
+             
+            <h3>Design 2</h3>
+
+            <p>Figma design: Dynamic music website featuring immersive visuals, easy navigation, and seamless playback integration for users.</p>
+            <div 
+            onclick="window.location.href='#'" class="btn">See Design</div>
+        </div>
+
+        <div class="project-card">
+            <img src="Mockup Arctic.png" alt="">
+             
+            <h3>Design 3</h3>
+
+            <p>Figma design: Modern jacket shopping site with stylish imagery, intuitive filters, and smooth checkout process for customers.</p>
+            <div 
+            onclick="window.location.href='https://dribbble.com/shots/23386200-Zorix-Arctic-Whisper-Jackets-Website-UI'" class="btn">See Design</div>
+        </div>
+
+        <div class="project-card">
+            <img src="The Travel Booking App.png" alt="">
+             
+            <h3>Design 4</h3>
+
+            <p>Figma design: Travel booking app showcasing breathtaking destinations, user-friendly navigation, and seamless reservation process for wanderlust explorers.</p>
+            <div 
+            onclick="window.location.href='https://dribbble.com/shots/23349672-Travel-Booking-App'"
+            class="btn">See Design</div>
+        </div>
+
+        <div class="project-card">
+            <img src="site with Mockup.png" alt="">
+             
+            <h3>Design 5</h3>
+
+            <p>Figma design: Tech site boasting sleek aesthetics, intuitive browsing, and comprehensive product information for tech enthusiasts.</p>
+            <div
+            onclick="window.location.href='https://dribbble.com/shots/23374942-Growth-Tech-solution-Website-UI'"
+             class="btn">See Design</div>
+        </div>
+
+        <div class="project-card">
+            <img src="Menu Page.png" alt="">
+             
+            <h3>Design 6</h3>
+
+            <p>Figma design: Complete food ordering site featuring enticing menus, seamless checkout, and responsive design for ultimate user satisfaction.</p>
+            <div
+            onclick="window.location.href='https://www.behance.net/gallery/189307443/Delicious-Food-Delivery-website-UI-updated'" 
+            class="btn">See Design</div>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span"></h2>
+            <div class="alert alert-success p-2 text-center" role="alert">
+                Great, lets get in touch soon!
+              </div>
+
+            <form class="contactForm" id="contactForm">
+               <div class="input-group">
+                <div class="input-box">
+                   <input type="text" placeholder="Your Name" id="name">
+                   <input type="email" placeholder="Your Email" id="email">
+
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" id="number">
+                    <input type="text" placeholder="Subject" id="subject">
+                    
+                 </div>
+               </div>
+
+               <div class="input-group-2">
+                <textarea name="" cols="30" rows="10" placeholder="Your Message" id="message"></textarea>
+                <input type="submit" value="Lets Talk" class="btn" id="submit">
+
+               </div>
+            </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/designer-richi-debnath/">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+            <a href="https://dribbble.com/15NearMe07">
+                <i class="bx bxl-dribbble"></i>
+            </a>
+            <a href="https://www.instagram.com/_windandwater_/">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="https://twitter.com/TheMessiah07">
+                <i class="bx bxl-twitter"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>   
+            <li>
+                <a href="#about">About Me</a>
+            </li>  
+            <li>
+                <a href="#projects">Projects</a>
+            </li>  
+            <li>
+                <a href="#services">What I do</a>
+            </li>  
+            <li>
+                <a href="#contact">Contact</a>
+            </li>  
+        </ul>
+        <p class="copyright">© d/nath richie. All rights reserved</p>
+    </footer>
+    
+
+
+
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
