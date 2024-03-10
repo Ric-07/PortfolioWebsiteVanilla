@@ -742,6 +742,7 @@ span{
         /* Border color */
         color: #1fb617; /* Text color */
         border-radius: 0.25rem; /* Rounded corners */
+        display: none;
         padding: 10px; /* Padding */
         font-size: large;
         text-align: center; /* Center text */
